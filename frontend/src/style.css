@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 1rem; /* 10px */
+}
+
+body{
+    height:100vh;
+    margin:0;
+    font: 1.6rem arial ;
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+    /* grid-template-columns: 1fr; */
+    grid-template-rows: 5rem 1fr 5rem;
+    height: 100%;
+}
+
+header{
+    grid-area: header;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.brand-logo a img{
+   width: 50px;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
