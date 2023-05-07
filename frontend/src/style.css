@@ -12,6 +12,13 @@ body{
     font: 1.6rem arial ;
 
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: skyblue;
+}
 
 .grid-container{
     display: grid;
@@ -26,12 +33,12 @@ body{
 
 header{
     grid-area: header;
-    background-color: black;
+    background-color: rgb(2,174,238);
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem;
+    padding-right: 0.5rem;
 }
 header a{
     text-decoration: none;
@@ -39,13 +46,49 @@ header a{
     font-weight: bold;
 }
 .brand-logo a img{
-   width: 50px;
+   width: 92px;
 }
 
 footer{
-    background-color: black;
+    background-color: rgb(2,174,238);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: white; 
+}
+
+/* products */
+.products-main{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.products-main li{
+    flex: 0 1 30 rem;
+    margin: 1rem;
+    margin-bottom: 0;
+    height: 20rem;
+    border-top: 0.2rem black solid;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+.product img{
+    max-height: 26rem;
+    max-width: 22rem;
+    margin-top: 2rem;
+
+}
+.product-name{
+    line-height: 2.2rem;
+}
+.product-brand{
+    font-size: 1.2rem;
+    color: grey;
 }
