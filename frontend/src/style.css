@@ -58,7 +58,7 @@ footer{
 }
 
 /* products */
-.products-main{
+.products{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -66,12 +66,12 @@ footer{
     margin: 0;
     justify-content: center;
 }
-.products-main li{
+.products li{
     flex: 0 1 30 rem;
     margin: 1rem;
     margin-bottom: 0;
     height: 20rem;
-    border-top: 0.2rem black solid;
+    border-top: 0.2rem rgb(225, 221, 221) solid;
 }
 .product{
     display: flex;
