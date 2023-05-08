@@ -1,2 +1,8 @@
 /node_modules
 /frontend/node_modules
+
+
+# webpack, webpack-cli
+# combined all javascript file and build a final main.js 
+# webpack-dev-server
+# if any changes in javascript file it's reload and apply changes
