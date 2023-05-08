@@ -6,7 +6,7 @@ const routes = {
     '/': HomeScreen,
     '/product/:id': ProductScreen
 }
-const router = () => {
+const router = async () => {
     const request = parseRequestUrl();
     const parseUrl =
         (request.resource ? `/${request.resource}` : '/') + (request.id ? '/:id' : '') +
@@ -15,7 +15,8 @@ const router = () => {
     const screen = routes[parseUrl] ? routes[parseUrl] : Error404Screen;
 
     const main = document.getElementById('main-container');
-    main.innerHTML = screen.render();
+    // the data which is coming in homescreen.js is async to for rending it we have to use async await here
+    main.innerHTML = await screen.render();
 }
 
 window.addEventListener('load', router);
