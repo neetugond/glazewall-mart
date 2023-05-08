@@ -1,4 +1,5 @@
 import axios from 'axios'
+import Rating from '../components/Rating';
 const HomeScreen = {
     render: async () => {
         // //static way to call data file in frontend
@@ -30,6 +31,12 @@ const HomeScreen = {
                     ${product.name}
                 </a>
             
+            </div>
+            <div class="product-rating">
+            ${Rating.render({
+                value: product.rating,
+                text: `${product.numReviews} reviews` ,
+            })}
             </div>
             <div class="product-brand">
                 ${product.brand}

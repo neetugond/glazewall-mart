@@ -92,3 +92,15 @@ footer{
     font-size: 1.2rem;
     color: grey;
 }
+
+/* rating */
+
+.rating{
+    color: gold;
+    font-size: 1.8rem;
+}
+
+.rating span:last-child{
+    color: black;
+    font-size: 1.4rem;
+}

@@ -11,7 +11,7 @@ app.get('/api/products', (req, res) => {
     res.send(data.products);
 });
 
-const port = 5000;
+const port = 5000; 
 app.listen(5000, () => {
     console.log(`server at http://localhost:${port}`)
 })
