@@ -1,5 +1,6 @@
 import axios from 'axios'
 import Rating from '../components/Rating';
+
 const HomeScreen = {
     render: async () => {
         // //static way to call data file in frontend
@@ -7,16 +8,16 @@ const HomeScreen = {
 
         // // calling data file through backend
         const response = await axios({
-            url:'http://localhost:5000/api/products',
+            url: 'http://localhost:5000/api/products',
             headers: {
                 'Content-Type': 'application/json',
             },
         });
-        if (!response || response.statusText != 'OK') {
+        if (!response || response.statusText !== 'OK') {
             return `<div>Error in getting data</div>`;
         }
 
-        const products = response.data ;
+        const products = response.data;
 
         return `
         <ul class="products">
@@ -34,9 +35,9 @@ const HomeScreen = {
             </div>
             <div class="product-rating">
             ${Rating.render({
-                value: product.rating,
-                text: `${product.numReviews} reviews` ,
-            })}
+            value: product.rating,
+            text: `${product.numReviews} reviews`,
+        })}
             </div>
             <div class="product-brand">
                 ${product.brand}

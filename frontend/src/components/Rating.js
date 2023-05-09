@@ -1,3 +1,4 @@
+/* eslint-disable no-unreachable */
 const Rating = {
     render: (props) => {
         if (!props.value) {
