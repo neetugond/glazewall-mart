@@ -19,7 +19,22 @@ a{
 a:hover{
     color: skyblue;
 }
+button{
+    font:1.6rem helvetica;
+    padding: 1rem;
+    border:none;
+    background-color: rgb(2,174,238);
+    border-radius:0.5rem;
+    cursor: pointer;
+    color: white;
+    width: 100%;
+}
 
+button:hover{
+   background-color: rgb(141, 225, 242);
+   color:white;
+   border: 2px solid black;
+}
 .grid-container{
     display: grid;
     grid-template-areas: 
@@ -113,7 +128,7 @@ footer{
     flex-wrap: wrap;
   }
   .details-image {
-    flex: 2 1 60rem;
+    flex: 2 1 30rem;
   }
   .details-image img {
     max-width: 60rem;
@@ -137,7 +152,6 @@ footer{
     margin-bottom: 1rem;
   }
   .details-action {
-    border: 0.1rem #808080 solid;
     border-radius: 0.5rem;
     background-color: #f8f8f8;
     padding: 1rem;

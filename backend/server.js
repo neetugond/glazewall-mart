@@ -12,6 +12,7 @@ app.get('/api/products', (req, res) => {
     res.send(data.products);
 });
 
+// creared backend api for /api/proucts/:id for this frontend file is api.js
 app.get('/api/products/:id', (req, res) => {
     const product = data.products.find((x) => x._id === req.params.id);
     if (product) {
@@ -22,7 +23,6 @@ app.get('/api/products/:id', (req, res) => {
 
 })
 
-const port = 5000;
 app.listen(5000, () => {
-    console.log(`server at http://localhost:${port}`)
+    console.log('server runing at http://localhost:5000')
 })
