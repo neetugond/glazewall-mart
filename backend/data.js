@@ -9,7 +9,7 @@ export default {
             brand: 'mungo',
             rating: 4.5,
             numReviews: 10,
-            countInStock:6,
+            countInStock:0,
             
         },
         {
@@ -56,7 +56,7 @@ export default {
             price: '1300',
             brand: 'ozone',
             rating: 3.5,
-            numReviews: 8,
+            numReviews: 6,
             countInStock:9,
             
         },
